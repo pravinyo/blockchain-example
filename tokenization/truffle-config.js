@@ -15,9 +15,27 @@ module.exports = {
     },
     ganache_local: {
       provider: function() {
-          return new HDWalletProvider(process.env.MNEMONIC, process.env.URL, MetaMaskAccountIndex )
+          return new HDWalletProvider(process.env.MNEMONIC, process.env.GANACHE_URL, MetaMaskAccountIndex )
       },
       network_id: process.env.NETWORK_ID
+    },
+    goerli_infura: {
+      provider: function() {
+          return new HDWalletProvider(process.env.MNEMONIC, process.env.GOERLI_INFURA, MetaMaskAccountIndex )
+      },
+      network_id: process.env.GOERLI_NETWORK_ID
+    },
+    ropsten_infura: {
+      provider: function() {
+          return new HDWalletProvider(process.env.MNEMONIC, process.env.ROPSTEN_INFURA, MetaMaskAccountIndex )
+      },
+      network_id: process.env.ROPSTEN_NETWORK_ID
+    },
+    rinkeby_infura: {
+      provider: function() {
+          return new HDWalletProvider(process.env.MNEMONIC, process.env.RINKEBY_INFURA, MetaMaskAccountIndex )
+      },
+      network_id: process.env.RINKEBY_NETWORK_ID
     }
   },
   compilers: {    
