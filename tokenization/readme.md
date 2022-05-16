@@ -13,3 +13,9 @@ We have to send a transaction from these accounts to MetaMask. Copy the account 
 Type in:
 - web3.eth.sendTransaction({from: accounts[0], to:"PASTE_ACCOUNT_FROM_METAMASK", value: web3.utils.toWei("1","ether")})
     - ex. web3.eth.sendTransaction({from: accounts[0], to:"0x33A9C27B7Ed487c92FfCE2283D6C31C9107bdabd", value: web3.utils.toWei("1","ether")})
+
+
+### to added your new token in meta mask
+- go asset tab in metamask account
+- click on add token
+- add token address which can be found in MyToken.json contract file or in console logs posrt deployment.
