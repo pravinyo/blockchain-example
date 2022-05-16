@@ -19,3 +19,19 @@ Type in:
 - go asset tab in metamask account
 - click on add token
 - add token address which can be found in MyToken.json contract file or in console logs posrt deployment.
+
+### .env file sample
+```
+INITIAL_TOKENS = 10000000
+MNEMONIC = "add from wallet"
+NETWORK_ID = 1337
+HOST = 127.0.0.1
+PORT = 8545
+GANACHE_URL = http://127.0.0.1:8545
+GOERLI_INFURA = url from infura website
+GOERLI_NETWORK_ID = 5
+ROPSTEN_INFURA = url from infura website
+ROPSTEN_NETWORK_ID = 3
+RINKEBY_INFURA = url from infura website
+RINKEBY_NETWORK_ID = 4
+```
